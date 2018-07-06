@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         List<AppInfo> appInfos = AppUtils.scanInstallApp(getPackageManager());
         recyApp.setAdapter(new AppAdapter(this, appInfos));
     }
+
+    @Override
+    public void onBackPressed() {
+//            super.onBackPressed();
+    }
 }
